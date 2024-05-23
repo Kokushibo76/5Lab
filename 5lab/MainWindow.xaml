@@ -1,0 +1,53 @@
+﻿<Window x:Class="_5lab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5lab"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="EmplDgr"/>
+        <DataGrid x:Name="FlowerDgr"/>
+        <TextBox x:Name="GG"/>
+        <ComboBox x:Name="Job_titlesCbx" DisplayMemberPath="Post" SelectedValuePath="ID_Employee"/>
+
+        <TextBlock x:Name="EmployeeTbx"/>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,2,0,0" Height="41" Width="833" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBox x:Name="SearchTbx" Width="617"/>
+            <TextBox x:Name="LoginTbx" Width="200"/>
+            <TextBox x:Name="PasswordTbx" Width="200"/>
+            <Button Content="Найти" Click="Button_ClickSearch" />
+        </StackPanel>
+
+        <DataGrid x:Name="StorDgr"/>
+        <TextBox x:Name="StorTbx"/>
+        <ComboBox x:Name="Flower_typeCbx" DisplayMemberPath="Flower_type" SelectedValuePath="ID_Flower_type"/>
+        <ComboBox x:Name="StreetCbx" DisplayMemberPath="Post" SelectedValuePath="ID_Employee"/>
+        <TextBox x:Name="FlowTbx"/>
+
+        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="3,256,20,-245" Grid.ColumnSpan="2">
+            <TextBlock x:Name="EmployeesTbx"/>
+            <DataGrid x:Name="EmployeesDgr" CanUserAddRows="False" SelectionChanged="EmployeesDgr_SelectionChanged"/>
+            <TextBox x:Name="SearchingTbx" Width="200"/>
+            <Button Content="Найти" Click="Button_ClickSearch" Margin="0,5,0,0"/>
+            <TextBox x:Name="ParticularPriceTbx"/>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Добавить" Click="Button_Click_AddFl" Margin="0,5,0,0"/>
+                <Button Content=" Удалить" Click="Button_ClickDelFl" Margin="0,5,0,0"/>
+                <Button Content="Изменить" Click="Button_Click_ChFl" Margin="0,5,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        <Frame x:Name="NavigationFrame" Grid.Row="1" Margin="3,256,20,-245" Grid.ColumnSpan="2" NavigationUIVisibility="Visible"/>
+        <StackPanel>
+            <Button Content="Навигация" Click="NavigateButton_Click" Margin="0,5,0,0"/>
+        </StackPanel>
+        <StackPanel>
+            <DataGrid x:Name="EmpDgr4" Grid.Row="2"/>
+            <ComboBox x:Name="JBCbx"/>
+        </StackPanel>
+        
+        
+    </Grid>
+</Window>

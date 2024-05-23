@@ -1,0 +1,25 @@
+﻿<Window x:Class="_5lab.Items"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5lab"
+        mc:Ignorable="d"
+        Title="Items" Height="450" Width="800">
+    <Grid>
+        <TabItem Header="Товары">
+            <Grid>
+                <TextBox x:Name="FlowTbx"/>
+                <TextBox x:Name="GG"/>
+                <ComboBox x:Name="Flower_typeCbx" DisplayMemberPath="Flower_type" SelectedValuePath="ID_Flower_type"/>
+                <DataGrid x:Name="FlowerDgr" AutoGenerateColumns="True" />
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Добавить" Click="Button_Click_AddFl" />
+                    <Button Content="Удалить" Click="Button_ClickDelFl" />
+                    <Button Content="Изменить" Click="Button_Click_ChFl" />
+                    <ComboBox x:Name="JBCbx"/>
+                </StackPanel>
+            </Grid>
+        </TabItem>
+    </Grid>
+</Window>

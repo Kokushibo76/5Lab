@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7febf72a40984acdb2043d3e2829615c" Name="Diagram1">
+        <EntityTypeShape EntityType="Flower_shopModel.Calculation" Width="1.5" PointX="8.125" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Checks" Width="1.5" PointX="9.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.City" Width="1.5" PointX="3.125" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Employee" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Flower" Width="1.5" PointX="12.125" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Flower_type" Width="1.5" PointX="12.375" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Job_title" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Purchases" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Roles" Width="1.5" PointX="10.125" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Store" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Type_of_purchase" Width="1.5" PointX="5.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Flower_shopModel.Users" Width="1.5" PointX="10.125" PointY="4.375" IsExpanded="true" />
+        <AssociationConnector Association="Flower_shopModel.FK__Purchases__Calcu__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Checks__Flower_I__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Checks__Purchase__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Checks__Users_ID__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Store__City_ID__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Employee__Job_ti__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Store__Employee___5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Flower__Flower_t__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Purchases__Store__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Purchases__Type___59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="Flower_shopModel.FK__Users__Role_ID__6383C8BA" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

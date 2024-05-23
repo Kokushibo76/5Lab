@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Flower_shopModelContainer" CdmEntityContainer="Flower_shopEntities">
+    <EntitySetMapping Name="Calculation">
+      <EntityTypeMapping TypeName="Flower_shopModel.Calculation">
+        <MappingFragment StoreEntitySet="Calculation">
+          <ScalarProperty Name="ID_Calculation" ColumnName="ID_Calculation" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Changee" ColumnName="Changee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Checks">
+      <EntityTypeMapping TypeName="Flower_shopModel.Checks">
+        <MappingFragment StoreEntitySet="Checks">
+          <ScalarProperty Name="ID_Check" ColumnName="ID_Check" />
+          <ScalarProperty Name="Purchases_ID" ColumnName="Purchases_ID" />
+          <ScalarProperty Name="Flower_ID" ColumnName="Flower_ID" />
+          <ScalarProperty Name="Users_ID" ColumnName="Users_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="City">
+      <EntityTypeMapping TypeName="Flower_shopModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="ID_City" ColumnName="ID_City" />
+          <ScalarProperty Name="City_name" ColumnName="City_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee">
+      <EntityTypeMapping TypeName="Flower_shopModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="ID_Employee" ColumnName="ID_Employee" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Job_title_ID" ColumnName="Job_title_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flower">
+      <EntityTypeMapping TypeName="Flower_shopModel.Flower">
+        <MappingFragment StoreEntitySet="Flower">
+          <ScalarProperty Name="ID_Flower" ColumnName="ID_Flower" />
+          <ScalarProperty Name="Name_of_flower" ColumnName="Name_of_flower" />
+          <ScalarProperty Name="Flower_type_ID" ColumnName="Flower_type_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Flower_type">
+      <EntityTypeMapping TypeName="Flower_shopModel.Flower_type">
+        <MappingFragment StoreEntitySet="Flower_type">
+          <ScalarProperty Name="ID_Flower_type" ColumnName="ID_Flower_type" />
+          <ScalarProperty Name="Flower_type1" ColumnName="Flower_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Job_title">
+      <EntityTypeMapping TypeName="Flower_shopModel.Job_title">
+        <MappingFragment StoreEntitySet="Job_title">
+          <ScalarProperty Name="ID_Job_title" ColumnName="ID_Job_title" />
+          <ScalarProperty Name="Job_title1" ColumnName="Job_title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Purchases">
+      <EntityTypeMapping TypeName="Flower_shopModel.Purchases">
+        <MappingFragment StoreEntitySet="Purchases">
+          <ScalarProperty Name="ID_Purchases" ColumnName="ID_Purchases" />
+          <ScalarProperty Name="Calculation_ID" ColumnName="Calculation_ID" />
+          <ScalarProperty Name="Store_ID" ColumnName="Store_ID" />
+          <ScalarProperty Name="Time_of_buy" ColumnName="Time_of_buy" />
+          <ScalarProperty Name="Type_of_purchase_ID" ColumnName="Type_of_purchase_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="Flower_shopModel.Roles">
+        <MappingFragment StoreEntitySet="Roles">
+          <ScalarProperty Name="ID_Role" ColumnName="ID_Role" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Store">
+      <EntityTypeMapping TypeName="Flower_shopModel.Store">
+        <MappingFragment StoreEntitySet="Store">
+          <ScalarProperty Name="ID_Store" ColumnName="ID_Store" />
+          <ScalarProperty Name="City_ID" ColumnName="City_ID" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="House" ColumnName="House" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type_of_purchase">
+      <EntityTypeMapping TypeName="Flower_shopModel.Type_of_purchase">
+        <MappingFragment StoreEntitySet="Type_of_purchase">
+          <ScalarProperty Name="ID_Type_of_purchase" ColumnName="ID_Type_of_purchase" />
+          <ScalarProperty Name="Type_of_purchase1" ColumnName="Type_of_purchase" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Flower_shopModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="Middlename" ColumnName="Middlename" />
+          <ScalarProperty Name="Firstname" ColumnName="Firstname" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Role_ID" ColumnName="Role_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
